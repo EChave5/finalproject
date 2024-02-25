@@ -64,7 +64,7 @@ function PetBoard ({users, updateUser, deleteUser, handleUpdatedStatus}) {
             <td><button onClick={() => deleteUser(user.id)}>Delete</button></td>
             <td>
               <input onChange={(e) => handleUpdatedStatus(e.target.value)} placeholder="Enter updated pet status"></input>
-              <button onClick={(e) => updateUser(user.status)}>Update Status</button>
+              <button onClick={(e) => updateUser(user)}>Update Status</button>
             </td>
           </tr>
         ))}

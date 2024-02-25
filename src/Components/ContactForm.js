@@ -15,6 +15,7 @@ function FormFloatingTextareaExample() {
 
   return (
     <>
+    <div>
        <FloatingLabel
         controlId="floatingInput"
         label="Enter your name"
@@ -39,11 +40,13 @@ function FormFloatingTextareaExample() {
       variant="outline-secondary" 
       size="lg"
       style={{
+        display: 'flex',
+        justifyContent: 'center',
         padding: '10px',
         margin: '10px 20px',
       }}
       >Submit</Button>
-
+    </div>
     </>
   );
 }

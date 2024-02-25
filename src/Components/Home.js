@@ -9,6 +9,7 @@ export default function Home() {
 
     const API_URL = 'https://65b337a1770d43aba4796fe1.mockapi.io/week16/pets'
   
+    //array to hold the users as held by the api
     const [users, setUsers] = useState([
       {
         name: '', 
@@ -19,6 +20,7 @@ export default function Home() {
       },
     ])
   
+    //array to hold the new user that will be posted to api with others
     const [newUser, setNewUser] = useState([{
       name: '',
       animalType: '',
@@ -33,11 +35,6 @@ export default function Home() {
       console.log(updatedStatusValue);
       setUpdatedStatus(updatedStatusValue);
     }
-  
-    
-  
-   
-  
   
     useEffect(() => {
       fetch(API_URL)
@@ -80,16 +77,18 @@ export default function Home() {
     }
   
     //update the status of a pet
-    const updateUser = (user) => {
+    const updateUser = (users) => {
        
-       let updatedUser = user
-       user = updatedStatus
+       /* let updatedUser = user
+       user = updatedStatus */
 
-        console.log(updatedUser, updatedStatus);
-      fetch(`${API_URL}/${user.id}`, {
+        console.log(users, updatedStatus);
+      fetch(`${API_URL}/${users.id}`, {
         method: 'PUT',
         headers: {'Content-Type': 'application/json'}, 
-        body: JSON.stringify(updatedStatus)
+        body: JSON.stringify({
+          status: updatedStatus
+        })
       }).then(() => getUsers())
     }
 	

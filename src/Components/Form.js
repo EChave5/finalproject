@@ -22,31 +22,23 @@ export default function Form({ postUser }) {
     postUser(newUser)
   } 
   
+  //function does not work to clear form
  const resetUser = (e) => {
   e.preventDefault()
-  let emptyUser = {
-    name: '',
-    animalType: '',
-    age: '',
-    description: '',
-    status: ''
-  }
   console.log('Clearing input fields')
-  resetUser(emptyUser)
  }
 
-  /* function handleClick(e) {
-    useState({
-      petName: '',
-      petType: '',
-      petAge: '',
-      petDescription: '',
-      petStatus: ''
-    })
-  } */
+ //works to reset the form but resets entire website also...not sure why
+  const resetForm = () => {
+      petName(""),
+      petType(""),
+      petAge(""),
+      petDescription(""),
+      petStatus("")
+  }
   
-
-  return <form onSubmit={(e) => addUser(e)} className="myForm">
+//form to allow for updating the form/api
+  return <form className="myForm">
     <h3>Post Lost Pet</h3>
     <label>Pet's Name</label>
     <input
@@ -59,7 +51,8 @@ export default function Form({ postUser }) {
     <input onChange={(e) => setPetDescription(e.target.value)}/>
     <label>Status of Pet</label>
     <input onChange={(e) => setPetStatus(e.target.value)}/>
-    <button onClick={() => resetUser}>Submit</button>
+    <button onClick={(e) => addUser(e)}>Submit</button>
+    <button onClick={() => resetForm}>Reset Form</button>
   </form>
 }
 

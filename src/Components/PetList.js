@@ -1,3 +1,5 @@
+//holds the information from the api
+
 [
   {
     "id": "1",

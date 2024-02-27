@@ -92,6 +92,7 @@ export default function Home() {
       }).then(() => getUsers())
     }
 	
+    //houses the form and table components
 		return (
     <div>
     <h2 className='text-center mb-5'>Lost Pet Board</h2>

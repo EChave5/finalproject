@@ -5,6 +5,10 @@ import Card from 'react-bootstrap/Card';
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
+//a place to put pictures of lost pets, names, and a small description 
+
+//buttons link to the home page 
+
 export default function Pictures() {
   return (
     <>

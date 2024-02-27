@@ -1,3 +1,4 @@
+//holding pictures of animals, could be used to house the uploaded pictures and the pictures can be called from this component
 
  //pictures of dogs:
  

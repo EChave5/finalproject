@@ -9,9 +9,15 @@ function FormFloatingTextareaExample() {
   const [setName] = useState('')
   const [setComment] = useState('')
 
+  //would be the function used with the submit button but did not have time work on this function
+  
   const handleClick = (e) => {
 
   }
+
+  //used react-bootstrap form with this contact page  -- would need to figure out how to clear the input fields after submit 
+
+  //submit button does not work, did not get to that point in my project.  I would also like to style the button differently, align it more in the center than to the side
 
   return (
     <>

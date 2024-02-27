@@ -1,6 +1,9 @@
 import React from 'react';
 import ContactForm from './ContactForm';
 
+
+//component that houses the contact form
+
 export default function Contact() {
 	
 		return (

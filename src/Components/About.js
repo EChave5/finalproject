@@ -2,6 +2,8 @@ import React from 'react';
 
 import Accordion from 'react-bootstrap/Accordion';
 
+//used react-bootstrap to style this page, would be used to hold information about the organization/whatever that would be running this site
+
 function BasicExample() {
   return (
 		<>

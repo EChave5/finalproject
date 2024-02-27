@@ -7,7 +7,7 @@ export default function Form({ postUser }) {
   const [petDescription, setPetDescription] = useState("");
   const [petStatus, setPetStatus] = useState("");
   
-  
+  //function to add a new user on the form
 
   const addUser = (e) => {
     e.preventDefault()

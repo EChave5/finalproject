@@ -15,6 +15,8 @@ import {
   useRouteMatch
 } from 'react-router-dom'; 
 
+//use of NavBar from react-bootstrap to create links between pages
+
 export default function Navigation() {
   
 return (
@@ -35,22 +37,6 @@ return (
       </Nav.Item>
     </Nav>
     <br></br>
-  {/* <nav>
-    <ul>
-      <li>
-        <Link to='/'>Home</Link>
-      </li>
-      <li>
-        <Link to='/about'>About</Link>
-      </li>
-      <li>
-        <Link to='/contact'>Contact</Link>
-      </li>
-      <li>
-        <Link to='/pictures'>Pictures</Link>
-      </li>
-    </ul>
-  </nav> */}
   <Switch>
   <Route path='/pictures'>
       <Pictures />
